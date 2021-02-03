@@ -2,16 +2,14 @@ import javax.swing.*;
 
 public class userInterfaceInput extends JFrame {
 
-    JFrame frame = new JFrame();
-    JOptionPane pane = new JOptionPane();
+    JFrame frame = new JFrame("User Interface");
     JButton button = new JButton();
 
     userInterfaceInput(){
         button.setText("Click Here");
-        pane.setName("User Interface");
-        pane.add(button);
-        frame.add(pane);
+        frame.add(button);
         frame.setVisible(true);
+        frame.setSize(500,300);
         frame.setLocationRelativeTo(null);
         frame.getDefaultCloseOperation();
 
