@@ -1,9 +1,3 @@
-import java.lang.reflect.Array;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Date;
-
 public class compressInfo{
 
     private String INFO;
@@ -38,7 +32,7 @@ public class compressInfo{
                 +input.getTemperature();
     }
 
-
+    //Debugging Purpose
     public static void main(String args[])  {
         compressInfo comp = new compressInfo();
         comp.INFO = comp.getPrimeInfo("Lao","Makati","08/15/1993")+","
@@ -49,6 +43,8 @@ public class compressInfo{
         comp.setValues();
 
         System.out.println(comp.INFO);
+
+        new userInterfaceInput();
 
     }
 
